@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Website Title & Description for Search Engine purposes -->
+    <title>Coding Battle</title>
+    <meta name="description" content="Learn how to code your first responsive website with the new Twitter Bootstrap 3.">
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="includes/css/styles.css">
+    <!-- Include Modernizr in the head, before any other Javascript -->
+    <script src="includes/js/modernizr-2.6.2.min.js"></script>
+    <!--Including all google font apis and faviconicon-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
+</head>
+
+<body class="container">
+    <header class="container" id="main">
+        <div class="navbar navbar-fixed-top">
+            <div class="container">
+                <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a id="navbarid" class="navbar-brand" href="/"><img src="images/logo.png" alt="Your Logo"></a>
+                <div class="nav-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Challenges <strong class="caret"></strong></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Web Design</a>
+                                </li>
+                                <li>
+                                    <a href="#">Web Development</a>
+                                </li>
+                                <li>
+                                    <a href="#">React Js</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Algorithms</li>
+                                <li>
+                                    <a href="#">C++</a>
+                                </li>
+                                <li>
+                                    <a href="#">Python</a>
+                                </li>
+                            </ul>
+                            <!-- end dropdown-menu -->
+                        </li>
+                    </ul>
+                    <!--<form class="navbar-form pull-left">
+                            <input type="text" class="form-control" placeholder="Search this site..." id="searchInput">
+                            <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-search"></span></button>
+                        </form>-->
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Companies <strong class="caret"></strong></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#"><span class="glyphicon glyphicon-wrench"></span>HP</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="glyphicon glyphicon-refresh"></span>Google</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="glyphicon glyphicon-briefcase"></span> Hackerearth</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a data-toggle="modal" href="#myModal"><span class="glyphicon glyphicon-plus"></span></span> Sign Up</a></li>
+                        <li><a data-toggle="modal" href="#myModalsignin"><span class="glyphicon glyphicon-user"></span> Log In</a></li>
+                    </ul>
+                    <!-- end nav pull-right -->
+                </div>
+                <!-- end nav-collapse -->
+            </div>
+            <!-- end container -->
+    </header>
+    <!-- end navbar header-->
+    <header>
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-megamenu">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Sign Up To Coding Battle</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddress">Address</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddress2">Address 2</label>
+                                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputCity">City</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputState">State</label>
+                                    <select id="inputState" class="form-control">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="inputZip">Zip</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Check me out
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign up</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="myModalsignin" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Sign In To Coding Battle</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign In</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="carousel slide" id="myCarousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+            <li data-slide-to="1" data-target="#myCarousel"></li>
+            <li data-slide-to="2" data-target="#myCarousel"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active" id="slide1">
+                <div class="carousel-caption">
+                    <h4 style="color: #767676">Coding Improve Skills</h4>
+                    <p style="color: #767676">Learn How To Code</p>
+                </div>
+                <!-- end carousel-caption-->
+            </div>
+            <!-- end item -->
+            <div class="item" id="slide2">
+                <div class="carousel-caption">
+                </div>
+                <!-- end carousel-caption-->
+            </div>
+            <!-- end item -->
+            <div class="item" id="slide3">
+                <div class="carousel-caption">
+                </div>
+                <!-- end carousel-caption-->
+            </div>
+            <!-- end item -->
+        </div>
+        <!-- carousel-inner -->
+        <!-- Controls -->
+        <a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+        <a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+    </div>
+    <hr>
+    <article style="color:#353434;" class="container">
+        <h2>About Coding_Battle</h2>
+        <p>Coding_Battle is a technology company that focuses on competitive programming challenges for both consumers and businesses, where developers compete by trying to program according to provided specifications</p>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+            <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+            <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+        </ul>
+        <section class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <h3>Coding_Battle</h3>
+                <p> A Platform for Aspiring Programmers CodeChef was created as a platform to help programmers make it big in the world of algorithms, computer programming and programming contests. At CodeChef we work hard to revive the geek in you by hosting a programming contest at the start of the month and another smaller programming challenge in the middle of the month.</p>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <h3>Practice</h3>
+                <p>
+                    Try your hand at one of our many practice problems and submit your solution in a language of your choice. Our programming contest judge accepts solutions in over 35+ programming languages. Preparing for coding contests were never this much fun! Receive points, and move up through the CodeChef ranks. Use our practice section to better prepare yourself for the multiple programming challenges that take place through-out the month on CodeChef.</p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <h3>Compete </h3>
+                <p>Monthly Programming Contests and Cook-offs Here is where you can show off your computer programming skills. Take part in our 10 day long monthly coding contest and the shorter format Cook-off coding contest. Put yourself up for recognition and win great prizes. Our programming contests have prizes worth up to INR 20,000 (for Indian Community), $700 (for Global Community) and lots more CodeChef goodies up for grabs.</p>
+            </div>
+        </section>
+    </article>
+    <hr>
+    <!--article -->
+    <article class="container">
+        <article class="row" id="features">
+            <section class="col-sm-4 feature">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Learn STL</h3>
+                    </div>
+                    <!-- end panel-heading -->
+                    <img src="images/badge_c++.png" alt="HTML5" class="img-circle">
+                    <p>C++ is a middle-level programming language developed by Bjarne Stroustrup starting in 1979 at Bell Labs. C++ runs on a variety of platforms.</p>
+                    <a href="#" class="btn btn-info btn-block">Learn to code c++</a>
+                </div>
+                <!-- end panel -->
+            </section>
+            <!-- end feature -->
+            <section class="col-sm-4 feature">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Learn Javascript</h3>
+                    </div>
+                    <!-- end panel-heading -->
+                    <img src="images/badge_js.png" alt="js" class="img-circle">
+                    <p>JavaScript, often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language</p>
+                    <a href="#" class="btn btn-info btn-block">Learn Javascript</a>
+                </div>
+                <!-- end panel -->
+            </section>
+            <!-- end feature -->
+            <section class="col-sm-4 feature">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Learn C#</h3>
+                    </div>
+                    <!-- end panel-heading -->
+                    <img src="images/badgecsharp.png" alt="c#" class="img-circle">
+                    <p>C# is a multi-paradigm programming language encompassing strong typing, imperative, declarative, functional, generic, object-oriented.</p>
+                    <a href="#" class="btn btn-info btn-block">More C#</a>
+                </div>
+                <!-- end panel -->
+            </section>
+            <!-- end feature -->
+        </article>
+    </article>
+    <hr>
+    <!-- end features -->
+    <!-- end myCarousel -->
+    <footer class="row">
+        <div class="col-sm-4">
+            <section class="up-name">
+                <p>(415) 900-4023 support@code_battle.com
+                </p>
+                <h1>Coding_Battle</h1>
+            </section>
+        </div>
+        <div class="col-sm-2">
+            <section class="company">
+                <h3 class="nav-title">DEVELOPER</h3>
+                <nav class="company-base">
+                    <ul style="list-style-type: none">
+                        <li><a href="#">Environment</a> </li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Scroing</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+        <div class="col-sm-2">
+            <section class="company">
+                <h3 class="nav-title">PRODUCTS</h3>
+                <nav class="company-base">
+                    <ul style="list-style-type: none">
+                        <li><a href="#">Screening</a></li>
+                        <li><a href="#">Live Interviewing</a></li>
+                        <li><a href="#">For School</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+        <div class="col-sm-2">
+            <section class="company">
+                <h3 class="nav-title">RESOURCES</h3>
+                <nav class="company-base">
+                    <ul style="list-style-type: none">
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">Product Overviews</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+        <div class="col-sm-2">
+            <section class="company">
+                <h3 class="nav-title">ABOUT US</h3>
+                <nav class="company-base">
+                    <ul style="list-style-type: none">
+                        <li><a href="#">careers</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </footer>
+    <!-- All Javascript at the bottom of the page for faster page loading -->
+    <!-- First try for the online version of jQuery-->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- If no online access, fallback to our hardcoded version of jQuery -->
+    <script>
+    window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="includes/js/script.js"></script>
+</body>
+
+</html>
